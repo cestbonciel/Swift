@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1AAA65FD2B1CCC500078D721 /* Initializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAA65FC2B1CCC500078D721 /* Initializer.swift */; };
+		1A8D52442B2E020200677D73 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D52432B2E020200677D73 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		1AAA65F02B1CC4160078D721 /* CopyFiles */ = {
+		1A8D523E2B2E020200677D73 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,13 +23,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1AAA65F22B1CC4160078D721 /* InstanceTEST */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = InstanceTEST; sourceTree = BUILT_PRODUCTS_DIR; };
-		1AAA65F52B1CC4160078D721 /* Instance1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instance1.swift; sourceTree = "<group>"; };
-		1AAA65FC2B1CCC500078D721 /* Initializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Initializer.swift; sourceTree = "<group>"; };
+		1A8D52402B2E020200677D73 /* Closure2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Closure2; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A8D52432B2E020200677D73 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		1A8D524A2B2E032100677D73 /* Closure2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Closure2.playground; path = ../Closure2.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1AAA65EF2B1CC4160078D721 /* Frameworks */ = {
+		1A8D523D2B2E020200677D73 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,67 +39,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1AAA65E92B1CC4160078D721 = {
+		1A8D52372B2E020200677D73 = {
 			isa = PBXGroup;
 			children = (
-				1AAA65F42B1CC4160078D721 /* InstanceTEST */,
-				1AAA65F32B1CC4160078D721 /* Products */,
+				1A8D524A2B2E032100677D73 /* Closure2.playground */,
+				1A8D52422B2E020200677D73 /* Closure2 */,
+				1A8D52412B2E020200677D73 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		1AAA65F32B1CC4160078D721 /* Products */ = {
+		1A8D52412B2E020200677D73 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1AAA65F22B1CC4160078D721 /* InstanceTEST */,
+				1A8D52402B2E020200677D73 /* Closure2 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1AAA65F42B1CC4160078D721 /* InstanceTEST */ = {
+		1A8D52422B2E020200677D73 /* Closure2 */ = {
 			isa = PBXGroup;
 			children = (
-				1AAA65F52B1CC4160078D721 /* Instance1.swift */,
-				1AAA65FC2B1CCC500078D721 /* Initializer.swift */,
+				1A8D52432B2E020200677D73 /* main.swift */,
 			);
-			path = InstanceTEST;
+			path = Closure2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1AAA65F12B1CC4160078D721 /* InstanceTEST */ = {
+		1A8D523F2B2E020200677D73 /* Closure2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1AAA65F92B1CC4160078D721 /* Build configuration list for PBXNativeTarget "InstanceTEST" */;
+			buildConfigurationList = 1A8D52472B2E020200677D73 /* Build configuration list for PBXNativeTarget "Closure2" */;
 			buildPhases = (
-				1AAA65EE2B1CC4160078D721 /* Sources */,
-				1AAA65EF2B1CC4160078D721 /* Frameworks */,
-				1AAA65F02B1CC4160078D721 /* CopyFiles */,
+				1A8D523C2B2E020200677D73 /* Sources */,
+				1A8D523D2B2E020200677D73 /* Frameworks */,
+				1A8D523E2B2E020200677D73 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = InstanceTEST;
-			productName = InstanceTEST;
-			productReference = 1AAA65F22B1CC4160078D721 /* InstanceTEST */;
+			name = Closure2;
+			productName = Closure2;
+			productReference = 1A8D52402B2E020200677D73 /* Closure2 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1AAA65EA2B1CC4160078D721 /* Project object */ = {
+		1A8D52382B2E020200677D73 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					1AAA65F12B1CC4160078D721 = {
+					1A8D523F2B2E020200677D73 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 1AAA65ED2B1CC4160078D721 /* Build configuration list for PBXProject "InstanceTEST" */;
+			buildConfigurationList = 1A8D523B2B2E020200677D73 /* Build configuration list for PBXProject "Closure2" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -107,29 +107,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 1AAA65E92B1CC4160078D721;
-			productRefGroup = 1AAA65F32B1CC4160078D721 /* Products */;
+			mainGroup = 1A8D52372B2E020200677D73;
+			productRefGroup = 1A8D52412B2E020200677D73 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1AAA65F12B1CC4160078D721 /* InstanceTEST */,
+				1A8D523F2B2E020200677D73 /* Closure2 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1AAA65EE2B1CC4160078D721 /* Sources */ = {
+		1A8D523C2B2E020200677D73 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AAA65FD2B1CCC500078D721 /* Initializer.swift in Sources */,
+				1A8D52442B2E020200677D73 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		1AAA65F72B1CC4160078D721 /* Debug */ = {
+		1A8D52452B2E020200677D73 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -189,7 +189,7 @@
 			};
 			name = Debug;
 		};
-		1AAA65F82B1CC4160078D721 /* Release */ = {
+		1A8D52462B2E020200677D73 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -242,7 +242,7 @@
 			};
 			name = Release;
 		};
-		1AAA65FA2B1CC4160078D721 /* Debug */ = {
+		1A8D52482B2E020200677D73 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -253,7 +253,7 @@
 			};
 			name = Debug;
 		};
-		1AAA65FB2B1CC4160078D721 /* Release */ = {
+		1A8D52492B2E020200677D73 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -267,25 +267,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1AAA65ED2B1CC4160078D721 /* Build configuration list for PBXProject "InstanceTEST" */ = {
+		1A8D523B2B2E020200677D73 /* Build configuration list for PBXProject "Closure2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1AAA65F72B1CC4160078D721 /* Debug */,
-				1AAA65F82B1CC4160078D721 /* Release */,
+				1A8D52452B2E020200677D73 /* Debug */,
+				1A8D52462B2E020200677D73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1AAA65F92B1CC4160078D721 /* Build configuration list for PBXNativeTarget "InstanceTEST" */ = {
+		1A8D52472B2E020200677D73 /* Build configuration list for PBXNativeTarget "Closure2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1AAA65FA2B1CC4160078D721 /* Debug */,
-				1AAA65FB2B1CC4160078D721 /* Release */,
+				1A8D52482B2E020200677D73 /* Debug */,
+				1A8D52492B2E020200677D73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 1AAA65EA2B1CC4160078D721 /* Project object */;
+	rootObject = 1A8D52382B2E020200677D73 /* Project object */;
 }

@@ -1,17 +1,4 @@
-//
-//  main.swift
-//  InstanceTEST
-//
-//  Created by Nat Kim on 2023/12/03.
-//
-
-import Foundation
-
-// MARK: - 프로퍼티 기본값
-/// 스위프트 모든 인스턴스는 초기화와 동시에
-/// 모든 프로퍼티에 유효한 값이 할당되어 있어야 한다
-/// 프로퍼티에 미리 기본값을 할당해두면
-/// 인스턴스가 생성됨과 동시에 초기값을 지니게 된다.
+import UIKit
 
 class PersonA {
     var name: String = "unknown"
@@ -50,10 +37,10 @@ class PersonC {
     var name: String
     var age: Int
     var nickname: String?
-    
-    init(name: String, age: Int, nickname: String? = nil) {
-        self.name = name
-        self.age = age
+    // 편의 이니셜라이저
+    convenience init(name: String, age: Int, nickname: String? = nil) {
+        self.init(name: name, age: age)
+        // 자기 자신의 다른 유형의 이니셜라이저를 호출해서 사용할 때, convenience 를 붙여야 함.
         self.nickname = nickname
     }
     
@@ -87,7 +74,7 @@ class Puppy {
 
 let happy: Puppy = Puppy(name: "happy")
 // 강아지는 주인없이 산책하면 안됨
-// 주인이 없는 상태라 오류 발생
+// 주인이 없는 상태라 오류 발생 - 주인이 nil인 상태
 //happy.goOut()
 //goOut() 메소드에 Thread 1: Fatal error: Unexpectedly found nil while implicitly unwrapping an Optional value
 
@@ -104,6 +91,28 @@ happy.goOut()
  인스턴스 생성에 실패하면 nil을 반환한다.
  그래서 실패가능한 이니셜라이저의 반환타입은 옵셔널 타입이다.
  */
+class PersonD {
+    var name: String
+    var age: Int
+    var nickname: String?
+    
+    init?(name: String, age: Int) {
+        if (0...120).contains(age) == false {
+            return nil
+        }
+        if name.count == 0 {
+            return nil
+        }
+        self.name = name
+        self.age = age
+    }
+}
+
+let john: PersonD? = PersonD(name: "john", age: 23)
+let joker: PersonD? = PersonD(name: "joker", age: 23)
+let batman: PersonD? = PersonD(name: "", age: 10)
+print(joker)
+print(batman)
 
 class PersonE {
     var name: String
@@ -142,10 +151,26 @@ class AirConditioner {
     }
     
     func turnOn() {
-        print("\(kind)에어컨은 최저온도 \(minTemperature)입니다.")
+        print("\(kind) 에어컨은 최저온도 \(minTemperature)입니다.")
     }
 }
 
 //var wallAircon = AirConditioner.turnOn(AirConditioner.init(kind: "벽걸이", minTemperature: 18.0))
 var wallAircon: AirConditioner = AirConditioner(kind: "벽걸이", minTemperature: 18.0)
 wallAircon.turnOn()
+
+
+class Car {
+    var color: String = "검정"
+    func accelerate() {
+        print("\(color)색 자동차가 가속합니다.")
+    }
+}
+// 클래스로부터 객체를 만들어내는 과정
+var blueCar = Car()
+
+blueCar.color = "파랑"
+
+var redCar = Car()
+redCar.color = "빨강"
+redCar.accelerate()
