@@ -112,5 +112,13 @@ let printSwift = { () -> () in
     print("  프린트 종료")
 }
 
-closureParamFunction2(closure: printSwiftFunction)
-closureParamFunction2(closure: printSwift)
+//closureParamFunction2(closure: printSwiftFunction)
+//closureParamFunction2(closure: printSwift)
+closureParamFunction2(closure: {
+    print("프린트로 전달하면서 클로저파라미터로 전달")
+})
+
+closureParamFunction2(closure: {
+    print("프린트 종료1")
+    print("프린트 종료2")
+})
