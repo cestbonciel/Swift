@@ -53,3 +53,16 @@ firstMatrix[0, 1] = 1.5
 firstMatrix[1, 0] = 3.2
 
 print("new 1st Matrix: \(firstMatrix)")
+
+//let someValue = firstMatrix[2, 2]
+// Thread 1: Assertion failed: Index out of range
+
+enum Planet: Int {
+case mercury = 1, venus, earth, mars, jupiter, saturn, uranus, neptune
+    static subscript(n: Int) -> Planet {
+        return Planet(rawValue: n)!
+    }
+}
+
+let mars = Planet[4]
+print(mars)
