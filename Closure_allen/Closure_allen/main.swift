@@ -122,3 +122,21 @@ closureParamFunction2(closure: {
     print("프린트 종료1")
     print("프린트 종료2")
 })
+
+
+func closureCaseFunction(a: Int, b: Int, param: (Int) -> Void) {
+    let c = a + b
+    param(c)
+}
+
+closureCaseFunction(a: 3, b: 479) { int in
+    print("the result of Numbers: \(int)")
+}
+
+
+func multiClosureFunction(closure1: () -> Void, closure2: () -> Void) {
+    closure1()
+    closure2()
+}
+
+
