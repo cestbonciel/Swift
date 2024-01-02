@@ -135,8 +135,22 @@ closureCaseFunction(a: 3, b: 479) { int in
 
 
 func multiClosureFunction(closure1: () -> Void, closure2: () -> Void) {
+    print("Do you wanna learn programming language?")
     closure1()
     closure2()
 }
 
+let sweetLanguage = {
+    print("Swift")
+}
+
+let uikitLang = {
+    print("import UIKit")
+}
+
+let swiftUILang = {
+    print("import SwiftUI")
+}
+
+multiClosureFunction(closure1: sweetLanguage, closure2: uikitLang)
 
