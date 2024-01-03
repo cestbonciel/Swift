@@ -33,6 +33,10 @@ func someFunction(num: Int) -> String{
 
 someFunction(num: 3)
 
+/*
+ # 2개 이상의 클로저
+ */
+
 func multiple(a: Int, b: Int) -> Int {
     let result = a * b
     return result

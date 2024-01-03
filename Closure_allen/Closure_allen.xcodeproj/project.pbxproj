@@ -25,7 +25,7 @@
 /* Begin PBXFileReference section */
 		1AC9872D2B3C517E0063BD50 /* Closure_allen */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Closure_allen; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AC987302B3C517E0063BD50 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		1AC987372B3C521D0063BD50 /* Closure_allen3.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Closure_allen3.playground; path = "/Users/seohyunkim/Programming/Programming/iOS/Swift Language/steady swift study/Closure_allen/Closure_allen/../../Closure_allen3.playground"; sourceTree = "<absolute>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		1AC987372B3C521D0063BD50 /* Closure_allen3.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Closure_allen3.playground; path = ../Closure_allen3.playground; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

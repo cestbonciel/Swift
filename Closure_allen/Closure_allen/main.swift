@@ -154,3 +154,19 @@ let swiftUILang = {
 
 multiClosureFunction(closure1: sweetLanguage, closure2: uikitLang)
 
+multiClosureFunction(closure1: {
+    print("------I wanna be an iOS developer.")
+}, closure2: {
+    print("I wanna deploy my personal iOS app------")
+})
+
+func performClosure(closure: () -> ()) {
+    print("------------")
+    print("START")
+    closure()
+    print("END")
+}
+
+performClosure(closure: {
+    print("----intermission----")
+})
