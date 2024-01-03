@@ -39,7 +39,7 @@ closureParamFunction {
 }
 
 // 예제
-// 1) 함수를 파라미터로 받는 함수 정의 
+// 1) 함수를 파라미터로 받는 함수 정의
 
 func executeClosureFunction(a: Int, b: Int, closure: (Int) -> Void) {
     let c = a + b
@@ -72,3 +72,56 @@ performClosure(param: { str in
 performClosure(param: { str in
     str.count
 })
+
+performClosure { name in
+    let seohyun = "iOS Developer"
+    let lengthName: Int = seohyun.count
+    return lengthName
+}
+
+// 2) 한 줄인 경우, 리턴 생략 가능(Implict Return)
+performClosure(param: { str in
+    str.count
+})
+
+
+// 3) Argument 이름을 축약(shorthan Argument)
+performClosure(param: {
+    $0.count
+})
+
+// 4) trailing closure
+performClosure { $0.count }
+
+/*:
+---
+* 축약 형태로의 활용
+---
+*/
+
+let closureType1 = { (param) in
+    return param % 2 == 0
+}
+
+closureType1(8)
+
+let closureType2 = { $0 % 2 == 0 }
+
+closureType2(3)
+
+let closureType3 = { (a: Int, b: Int) -> Int in
+    return a * b
+}
+
+print("closureType3: \(closureType3(100, 2))")
+
+let closureType4: (Int, Int) -> Double = { (first, second) in
+    return Double(first * second)
+}
+
+print("Double Type: \(closureType4(3, 6))")
+
+let closureType5: (String, String) -> Int = { Int($0.count) * Int($1.count) }
+// argumnet type 을 지우면 에러가 남
+
+print("multiple Name: \(closureType5("seohyun", "swift"))")
