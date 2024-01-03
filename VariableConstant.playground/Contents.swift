@@ -50,3 +50,13 @@ let anotherName = "스티브잡스"
 
 //anotherName = "스티브잡스"
 // Cannot assign to value: 'anotherName' is a 'let' constant. Change 'let' to 'var' to make it mutable
+
+/*:
+# 변수의 정식 문법
+ - 변수의 선언과 저장(할당)
+---
+*/
+
+var a: Int = 3 // 변수 선언하면서 저장 (메모리 공간 먼저 생성하는 동시에 데이터 저장)
+
+
