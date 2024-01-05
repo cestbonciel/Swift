@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1AC987312B3C517E0063BD50 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC987302B3C517E0063BD50 /* main.swift */; };
+		1A81E4A72B480E000030D03A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC987302B3C517E0063BD50 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -96,6 +96,7 @@
 				TargetAttributes = {
 					1AC9872C2B3C517E0063BD50 = {
 						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
 					};
 				};
 			};
@@ -122,7 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AC987312B3C517E0063BD50 /* main.swift in Sources */,
+				1A81E4A72B480E000030D03A /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,10 +246,12 @@
 		1AC987352B3C517E0063BD50 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2P5FNS3JAJ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -256,6 +259,7 @@
 		1AC987362B3C517E0063BD50 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2P5FNS3JAJ;
 				ENABLE_HARDENED_RUNTIME = YES;
