@@ -7,5 +7,17 @@
 
 import Foundation
 
-print("Hello, World!")
+func printRandomString(strs: String) -> Character {
+    var result: Character = " "
+    let slice = ArraySlice(strs)
+    if let randomChar = slice.randomElement() {
+        result = randomChar
+    }
+    
+    return result
+}
+
+
+print(printRandomString(strs: "NatSwift"))
+
 
