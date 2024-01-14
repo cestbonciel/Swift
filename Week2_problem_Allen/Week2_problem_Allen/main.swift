@@ -7,17 +7,25 @@
 
 import Foundation
 
-func printRandomString(strs: String) -> Character {
-    var result: Character = " "
-    let slice = ArraySlice(strs)
-    if let randomChar = slice.randomElement() {
-        result = randomChar
+func isPrime(for number: Int) {
+    guard number > 1 else {
+        print("\(number)는 소수가 아닙니다.")
+        return
     }
-    
-    return result
+
+    for i in 2..<number {
+        if number % i == 0 {
+            print("\(number)는 소수가 아닙니다.")
+            return
+        } else {
+            continue
+        }
+    }
+    print("\(number)는 소수입니다.")
 }
 
+// 사용 예시
+let numberToCheck = 6
+isPrime(for: numberToCheck)
 
-print(printRandomString(strs: "NatSwift"))
-
-
+isPrime(for: 5)

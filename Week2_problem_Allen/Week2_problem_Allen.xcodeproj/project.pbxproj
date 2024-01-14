@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1AD3FDBF2B539AF2003E7EDC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD3FDBE2B539AF2003E7EDC /* main.swift */; };
+		1AD3FDC62B53A5E2003E7EDC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD3FDC52B53A5E2003E7EDC /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,8 @@
 
 /* Begin PBXFileReference section */
 		1AD3FDBB2B539AF2003E7EDC /* Week2_problem_Allen */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Week2_problem_Allen; sourceTree = BUILT_PRODUCTS_DIR; };
-		1AD3FDBE2B539AF2003E7EDC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		1AD3FDBE2B539AF2003E7EDC /* StringToCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringToCharacter.swift; sourceTree = "<group>"; };
+		1AD3FDC52B53A5E2003E7EDC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +58,8 @@
 		1AD3FDBD2B539AF2003E7EDC /* Week2_problem_Allen */ = {
 			isa = PBXGroup;
 			children = (
-				1AD3FDBE2B539AF2003E7EDC /* main.swift */,
+				1AD3FDBE2B539AF2003E7EDC /* StringToCharacter.swift */,
+				1AD3FDC52B53A5E2003E7EDC /* main.swift */,
 			);
 			path = Week2_problem_Allen;
 			sourceTree = "<group>";
@@ -94,6 +96,7 @@
 				TargetAttributes = {
 					1AD3FDBA2B539AF2003E7EDC = {
 						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
 					};
 				};
 			};
@@ -120,7 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AD3FDBF2B539AF2003E7EDC /* main.swift in Sources */,
+				1AD3FDC62B53A5E2003E7EDC /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,10 +246,12 @@
 		1AD3FDC32B539AF2003E7EDC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2P5FNS3JAJ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -254,6 +259,7 @@
 		1AD3FDC42B539AF2003E7EDC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2P5FNS3JAJ;
 				ENABLE_HARDENED_RUNTIME = YES;
