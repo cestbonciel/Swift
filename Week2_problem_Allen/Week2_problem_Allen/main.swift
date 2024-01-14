@@ -6,26 +6,14 @@
 //
 
 import Foundation
-
-func isPrime(for number: Int) {
-    guard number > 1 else {
-        print("\(number)는 소수가 아닙니다.")
-        return
+//MARK: - 팩토리얼 구하는 함수
+func isFactorial(_ num: Int) -> Int {
+    let factorialNumber = num
+    var result = 1
+    for i in 1...factorialNumber {
+        result *= i
     }
-
-    for i in 2..<number {
-        if number % i == 0 {
-            print("\(number)는 소수가 아닙니다.")
-            return
-        } else {
-            continue
-        }
-    }
-    print("\(number)는 소수입니다.")
+    return result
 }
 
-// 사용 예시
-let numberToCheck = 6
-isPrime(for: numberToCheck)
-
-isPrime(for: 5)
+print(isFactorial(5))

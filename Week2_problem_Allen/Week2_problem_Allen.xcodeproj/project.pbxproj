@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1AD3FDC62B53A5E2003E7EDC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD3FDC52B53A5E2003E7EDC /* main.swift */; };
+		1AD3FDC92B53AE49003E7EDC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD3FDC82B53AE49003E7EDC /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,7 +25,9 @@
 /* Begin PBXFileReference section */
 		1AD3FDBB2B539AF2003E7EDC /* Week2_problem_Allen */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Week2_problem_Allen; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AD3FDBE2B539AF2003E7EDC /* StringToCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringToCharacter.swift; sourceTree = "<group>"; };
-		1AD3FDC52B53A5E2003E7EDC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		1AD3FDC52B53A5E2003E7EDC /* PrimeNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeNumbers.swift; sourceTree = "<group>"; };
+		1AD3FDC72B53ADD6003E7EDC /* Week2_Exercises.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Week2_Exercises.playground; path = ../Week2_Exercises.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		1AD3FDC82B53AE49003E7EDC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 		1AD3FDB22B539AF2003E7EDC = {
 			isa = PBXGroup;
 			children = (
+				1AD3FDC72B53ADD6003E7EDC /* Week2_Exercises.playground */,
 				1AD3FDBD2B539AF2003E7EDC /* Week2_problem_Allen */,
 				1AD3FDBC2B539AF2003E7EDC /* Products */,
 			);
@@ -59,7 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				1AD3FDBE2B539AF2003E7EDC /* StringToCharacter.swift */,
-				1AD3FDC52B53A5E2003E7EDC /* main.swift */,
+				1AD3FDC52B53A5E2003E7EDC /* PrimeNumbers.swift */,
+				1AD3FDC82B53AE49003E7EDC /* main.swift */,
 			);
 			path = Week2_problem_Allen;
 			sourceTree = "<group>";
@@ -123,7 +127,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AD3FDC62B53A5E2003E7EDC /* main.swift in Sources */,
+				1AD3FDC92B53AE49003E7EDC /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
