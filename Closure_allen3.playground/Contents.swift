@@ -1,5 +1,6 @@
 import UIKit
 
+/*
 let aClosureType = { () -> () in
     print("안녕")
 }
@@ -43,3 +44,20 @@ func multiple(a: Int, b: Int) -> Int {
 }
 
 print(multiple(a: 34, b: 2))
+
+var completionHandlers: [() -> Void] = []
+func someFunctionWithEscapingClosure(completionHandler: @escaping () -> Void) {
+    completionHandlers.append(completionHandler)
+}
+*/
+
+func performGCDClosure(value: @escaping (String) -> ()) {
+    var firstValue = "Nat"
+    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+        value(firstValue)
+    }
+}
+
+performGCDClosure { 문자열 in
+    print("문자열: \(문자열)")
+}
