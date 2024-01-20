@@ -26,6 +26,7 @@ isPrime(for: 5)
 
 // MARK: - 팩토리얼 구하는 함수
 // 5! = 5 x 4 x 3 X 2 X 1
+/*
 var factorialNumber = 5
 var result = 1
 for i in 1...factorialNumber {
@@ -46,3 +47,19 @@ func isFactorial(_ num: Int) -> Int {
 }
 
 isFactorial(5)
+*/
+
+func factorialLoop(num: Int) -> Int {
+    var result = 1
+    var currentNum = num
+
+    while currentNum > 1 {
+        result *= currentNum
+        currentNum -= 1
+    }
+
+    return result
+}
+
+let result = factorialLoop(num: 5)
+print(result)
