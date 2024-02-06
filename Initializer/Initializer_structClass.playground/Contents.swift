@@ -33,8 +33,8 @@ class FoodRestaurant {
     }
 
     convenience init() {
-//        self.init(name: "🥘 [not ordered yet. please choose your meal.]")
-        self.init(name: "라면", category: "한식")
+        self.init(name: "🥘 [not ordered yet. please choose your meal.]")
+//        self.init(name: "라면", category: "한식")
     }
     
     convenience init(name: String) {
@@ -62,3 +62,19 @@ let namedMeat = FoodRestaurant(name: "Bacon")
 let newOrder = FoodRestaurant()
 print(newOrder.name)
 print(newOrder.category)
+
+class RecipeIngredient: FoodRestaurant {
+    var quantity: Int
+    
+    init(name: String, category: String, quantity: Int) {
+        self.quantity = quantity
+        super.init(name: name, category: category)
+    }
+    
+    override convenience init(name: String) {
+        self.init(name: name, quantity: 1)
+    }
+}
+
+let notOrderedItem = RecipeIngredient()
+let oneBacon = RecipeIngredient()
