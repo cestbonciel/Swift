@@ -2,37 +2,78 @@
 //  main.swift
 //  ARC
 //
-//  Created by Nat Kim on 2023/12/09.
+//  Created by Nat Kim on 2024/02/08.
 //
 
 import Foundation
 
-class Fruit {
+
+// MARK: - Unowned Reference -----------
+
+
+class Customer {
     let name: String
-    var quantity: Int
-    init(name: String, quantity: Int) {
+    var card: CreditCard?
+    
+    init(name: String) {
         self.name = name
-        self.quantity = quantity
-        print("\(name) is being initialized per \(quantity).")
     }
     
     deinit {
-        print("\(quantity) \(name) are being deinitialized into tummy.")
+        print("\(name) is being deinitialized")
     }
 }
 
-var reference1: Fruit?
-var reference2: Fruit?
-var reference3: Fruit?
 
-reference1 = Fruit(name: "banana", quantity: 3)
-// banana is being initialized per 3.
+class CreditCard {
+    let number: UInt64
+    let customer: Customer
+//    unowned let customer: Customer
+    init(number: UInt64, customer: Customer) {
+        self.number = number
+        self.customer = customer
+    }
+    
+    deinit {
+        print("Card #\(number) is being deinitialized.")
+    }
+}
 
-reference2 = reference1
-reference3 = reference1
+var john: Customer?
 
-reference1 = nil
-reference2 = nil
+john = Customer(name: "John Appleseed")
+john!.card = CreditCard(number: 1234_5678_9012_3456, customer: john!)
 
-reference3 = nil
-// 3 banana are being deinitialized into tummy.
+john = nil
+
+// MARK: - Unowned Optional References ------
+
+class Department {
+    var name: String
+    var courses: [Course]
+    init(name: String) {
+        self.name = name
+        self.courses = []
+    }
+}
+
+class Course {
+    var name: String
+    unowned var department: Department
+    unowned var nextCourse: Course?
+    
+    init(name: String, in department: Department) {
+        self.name = name
+        self.department = department
+        self.nextCourse = nil
+    }
+}
+
+let department = Department(name: "Horticulture")
+let intro = Course(name: "Survey of Plants", in: department)
+let intermediate = Course(name: "Growing Common Herbs", in: department)
+let advanced = Course(name: "Caring for Tropical Plants", in: department)
+
+intro.nextCourse = intermediate
+intermediate.nextCourse = advanced
+department.courses = [intro, intermediate, advanced]
